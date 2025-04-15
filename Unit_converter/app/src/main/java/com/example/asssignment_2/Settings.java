@@ -3,7 +3,7 @@ package com.example.asssignment_2;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
-
+import com.airbnb.lottie.LottieAnimationView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -16,6 +16,7 @@ import com.google.android.material.button.MaterialButtonToggleGroup;
 public class Settings extends AppCompatActivity {
     private TextView back;
     private MaterialButtonToggleGroup theme;
+    private  LottieAnimationView lottie;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +47,10 @@ public class Settings extends AppCompatActivity {
                 }
             }
         });
+
+        //Lottle animation funtion to play the annimation
+        lottie = findViewById(R.id.Lottie);
+        lottie.playAnimation();
 
     }
 }

@@ -7,17 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".Settings">
 
-    <TextView
+    <android.widget.Button
         android:id="@+id/back"
         android:layout_width="142dp"
         android:layout_height="38dp"
+        android:background="@color/primary"
         android:text="Go back"
+        android:theme="@style/Widget.Material3.ActionBar.Solid"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259" />
+        app:layout_constraintVertical_bias="0.139" />
 
     <com.google.android.material.button.MaterialButtonToggleGroup
         android:id="@+id/theme"
@@ -26,31 +28,61 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.28"
         app:singleSelection="true"
         app:selectionRequired="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/btnDefault"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Default" />
+    <Button
+        android:id="@+id/btnDark"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272"
+        tools:layout_editor_absoluteX="161dp"
+        tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/btnDark"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dark" />
+    <Button
+        android:id="@+id/btnDefault"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default"
+        app:layout_constraintEnd_toStartOf="@+id/btnDark"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="186dp"
+        tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/btnLight"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Light" />
-
+    <Button
+        android:id="@+id/btnLight"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnDark"
+        tools:layout_editor_absoluteY="186dp"
+        tools:ignore="MissingConstraints" />
     </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/Lottie"
+        android:layout_height="250dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animation1"
+        android:layout_width="400dp"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

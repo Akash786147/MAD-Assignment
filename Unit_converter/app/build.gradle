@@ -39,4 +39,6 @@ dependencies {
     androidTestImplementation libs.espresso.core
 
     implementation "com.google.android.material:material:1.2.1"
+    String lottieVersion = "3.4.0"
+    implementation("com.airbnb.android:lottie:$lottieVersion")
 }
