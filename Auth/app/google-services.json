@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "410306229956",
+    "firebase_url": "https://v4c-app-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "v4c-app",
+    "storage_bucket": "v4c-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410306229956:android:ad60a2f7d5122d950afb91",
+        "android_client_info": {
+          "package_name": "com.example.asssignment_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhRwVy8Jzgs9pLyYtuwDIU60NA_B6BLmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410306229956:android:74e918d3c60960580afb91",
+        "android_client_info": {
+          "package_name": "com.v4c.ap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhRwVy8Jzgs9pLyYtuwDIU60NA_B6BLmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
