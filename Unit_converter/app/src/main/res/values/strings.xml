@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Asssignment_2</string>
+    <string name="app_name">Question1</string>
     <string-array name="unit_type">
         <item>Foot </item>
         <item>centimeter </item>
@@ -7,4 +7,6 @@
         <item>Yard </item>
         <item>Inch </item>
     </string-array>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
 </resources>
